@@ -1,0 +1,109 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  /* z-index: -2; */
+}
+/* $first: white;
+$second: #090c31;
+$third: #5853ff;
+$dark: rgb(44, 44, 44);
+$text1: "Roboto";
+$text2: cursive; */
+
+nav {
+  /* z-index: -2; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #090c31;
+  position: sticky;
+  top: 0;
+  padding: 5px 20px;
+  >.title:hover{
+    color: #28d146;
+  }
+  > .menu {
+    display: none;
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 4px;
+    width: 30px;
+    height: 20px;
+    span {
+      height: 10px;
+      width: 100%;
+      background-color: white;
+      border-radius: 10px;
+    }
+  }
+  > .title {
+    font-size: 25px;
+    margin: 15px;
+    text-decoration: none;
+    color: white;
+  }
+  > ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    > li {
+      list-style: none;
+      > a {
+        display: block;
+        text-decoration: none;
+        color: white;
+        /* padding: 10px; */
+        margin: 0 10px;
+        border-radius: 10px;
+      }
+    }
+  }
+}
+
+nav a {
+  position: relative;
+}
+nav  ul a:hover::before {
+  position: absolute;
+  content: " ";
+  height: 3px;
+  width: 100%;
+  background: white;
+  bottom: -4px;
+  left: 0;
+
+}
+
+@media (max-width: 850px) {
+  nav {
+    flex-direction: column;
+    align-items: start;
+    .menu {
+      display: flex;
+      margin-top: 10px;
+      margin-right: 10px;
+    }
+    ul.open {
+      display: flex;
+    }
+    ul {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      margin-bottom: 10px;
+
+      > li {
+        
+        text-align: center;
+        > a {
+          margin: 10px;
+        }
+      }
+    }
+  }
+}
