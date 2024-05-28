@@ -13,8 +13,10 @@ import { RiReactjsLine } from "react-icons/ri";
 import { VscVscode } from "react-icons/vsc";
 import { FaGithub } from "react-icons/fa";
 import { RiJavaLine } from "react-icons/ri";
+import { FaHackerrank } from "react-icons/fa";
 import cicon from "./c.svg";
-import project1 from "./Screenshot 2024-05-20 192842.png";
+import project1 from "./assets/Screenshot 2024-05-20 192842.png";
+import project2 from "./assets/Screenshot 2024-05-28 143808.png"
 import resume from "./"
 import { BiColor } from 'react-icons/bi';
 import { BsTwitterX } from "react-icons/bs";
@@ -25,17 +27,17 @@ const Home = () => {
     <div >
       <div className='hello' id="home">
         <div>
-          <h2 className='font-regular'>Hello Everybody,<h2 className='font-bold' >I'm <strong style={{color:'#28d146'}}>VIKAS BALE</strong></h2><h3 className='font-medium'>Web Developer | DSA</h3></h2>
+          <h2 className='font-regular'>Hello Everybody,<h2 className='font-bold' >I'm <strong style={{ color: '#28d146' }}>VIKAS BALE</strong></h2><h3 className='font-medium'>Web Developer | DSA</h3></h2>
         </div>
 
 
         <div className='mail-location'>
           <div>
-            <MdOutlineEmail style={{fontSize:'26px'}} />
+            <MdOutlineEmail style={{ fontSize: '26px' }} />
             <h5 className='font-regular'>vikasbale4@gmail.com</h5>
           </div>
           <div>
-            <FaRegAddressCard style={{fontSize:'26px'}} />
+            <FaRegAddressCard style={{ fontSize: '26px' }} />
             <h5 className='font-regular'>Hyderabad,India</h5>
           </div>
         </div>
@@ -53,9 +55,12 @@ const Home = () => {
           <a href="https://www.naukri.com/code360/profile/vikasbale" target='/blank'>
             <SiCodingninjas />
           </a>
+          <a href="https://www.hackerrank.com/profile/vikas_bale834" target='/blank'>
+          <FaHackerrank />
+          </a>
         </div>
         <div className='resume'>
-        <a href="https://drive.google.com/file/d/1ulDVwWSnkc7GsZY5cRQCR9QoYbXKFkIY/view?usp=sharing" target='/blank' className="btn font-bold">My Resume</a>
+          <a href="https://drive.google.com/file/d/1ulDVwWSnkc7GsZY5cRQCR9QoYbXKFkIY/view?usp=sharing" target='/blank' className="btn font-bold">My Resume</a>
         </div>
       </div>
       <div className='about' id='About'>
@@ -72,46 +77,59 @@ const Home = () => {
           <h3 className='font-medium'>Languages</h3>
           <div>
             <ImHtmlFive className='icon' />
-            <SiCss3  className='icon'/>
-            <TbBrandJavascript  className='icon' />
-            <RiJavaLine className='icon'/>
+            <SiCss3 className='icon' />
+            <TbBrandJavascript className='icon' />
+            <RiJavaLine className='icon' />
           </div>
         </div>
         <div>
           <h3 className='font-medium'>Technologies</h3>
           <div>
             <FaBootstrap className='icon' />
-            <RiReactjsLine className='icon'/>
+            <RiReactjsLine className='icon' />
           </div>
         </div>
         <div>
           <h3 className='font-medium'>Tools</h3>
           <div>
-            <VscVscode className='icon'/>
-            <FaGithub className='icon'/>
+            <VscVscode className='icon' />
+            <FaGithub className='icon' />
           </div>
         </div>
 
         {/* <img src={cicon} alt="" /> */}
       </div>
       <div className='projects' id='Projects'>
-        <h2 className='font-bold' style={{color: '#090c31'}}>Projects</h2>
-        <div className="card" style={{ width: '18em' }}>
-          <img src={project1} classNmae="card-img-top" alt="..."/>
-          <div className="card-body">
-            <h5 className="card-title font-medium">JobHub</h5>
-            <p className="card-text font-regular">JobHub-Connecting Talent with Opportunity</p>
-            <div>
-              <a href="https://github.com/Vikas958/jobhub" target='/blank' className="btn font-regular">Show Code</a>
-              <a href="https://job-hub-portal.netlify.app/" target='/blank' className="btn font-regular">Live demo</a>
+        <h2 className='font-bold' style={{ color: '#090c31' }}>PROJECTS</h2>
+        <div>
+          <div className="card" style={{ width: '18em' }}>
+            <img src={project1} classNmae="card-img-top" alt="..." />
+            <div className="card-body">
+              <h5 className="card-title font-medium">JobHub</h5>
+              <p className="card-text font-regular">"JobHub: Where job seekers find opportunities and recruiters hire talent seamlessly."</p>
+              <div>
+                <a href="https://github.com/Vikas958/jobhub" target='/blank' className="btn font-regular">Show Code</a>
+                <a href="https://job-hub-portal.netlify.app/" target='/blank' className="btn font-regular">Live demo</a>
+              </div>
+            </div>
+          </div>
+          <div className="card" style={{ width: '18em' }}>
+            <img src={project2} classNmae="card-img-top" alt="..." />
+            <div className="card-body">
+              <h5 className="card-title font-medium">ShopEase</h5>
+              <p className="card-text font-regular">"An e-commerce platform with user-friendly interface and seamless cart functionality."</p>
+              <div>
+                <a href="https://github.com/Vikas958/shopease" target='/blank' className="btn font-regular">Show Code</a>
+                <a href="https://shop-ease-website.netlify.app/" target='/blank' className="btn font-regular">Live demo</a>
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <div className="footer" id='Contact' style={{zIndex:'5'}}>
+      <div className="footer" id='Contact' style={{ zIndex: '5' }}>
         <h3 className='font-medium'>About Me</h3>
         <p className='font-regular'>
-        Do you want to be even more successful? Learn to love learning and growth. The more effort you put into improving your skills, the better you get.
+          Do you want to be even more successful? Learn to love learning and growth. The more effort you put into improving your skills, the better you get.
         </p>
         <h3 className='font-medium'>Follow Me Here</h3>
         <div className='links'>
@@ -123,7 +141,7 @@ const Home = () => {
             <RiLinkedinBoxLine />
           </a>
           <a href="https://x.com/vikas_bale?t=RkGhMjf4m3CZuWx6tZDwdg&s=09" target='/blank'>
-          <BsTwitterX />
+            <BsTwitterX />
           </a>
         </div>
       </div>
