@@ -60,7 +60,7 @@ const Home = () => {
           </a>
         </div>
         <div className='resume'>
-          <a href="https://drive.google.com/file/d/1ulDVwWSnkc7GsZY5cRQCR9QoYbXKFkIY/view?usp=sharing" target='/blank' className="btn font-bold">My Resume</a>
+          <a href="https://drive.google.com/file/d/1JCqloPZHrIC_VfsSFwtmHkrejCWX_lfq/view?usp=drive_link" target='/blank' className="btn font-bold">My Resume</a>
         </div>
       </div>
       <div className='about' id='About'>
